@@ -2,7 +2,7 @@ package Banco.Cuentas;
 
 import java.util.Scanner;
 
-public class Cheques extends Cuenta {
+public class Cheques extends Cuenta implements Operaciones{
     private int chequesEmitidos;
     private  double cargos;
     public Cheques(Scanner leer) {
@@ -16,9 +16,12 @@ public class Cheques extends Cuenta {
                 getNombre() + getSaldo();
     }
     public double emitirCheque(){
-        if (chequesEmitidos < 11) {
-            this.cargos += 5;
-        }
+        if (chequesEmitidos < 11) cargos += 5;
+        if(chequesEmitidos >= 11) cargos = 0;
         return setSaldo(cargos);
+    }
+
+    public double getCargos() {
+        return cargos;
     }
 }

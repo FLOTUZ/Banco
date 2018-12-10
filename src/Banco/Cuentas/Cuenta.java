@@ -16,7 +16,7 @@ public class Cuenta {
     }
 
     public double setSaldo(double saldo) {
-        this.saldo = saldo;
+        this.saldo -= saldo;
         return saldo;
     }
 

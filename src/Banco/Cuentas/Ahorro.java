@@ -10,7 +10,7 @@ public class Ahorro extends Cuenta {
 
     @Override
     public String toString() {
-        return getTipo() + getnCuenta() +
+        return getTipo() +"\t" + getnCuenta() +
                 getNombre() + getSaldo();
     }
 }
