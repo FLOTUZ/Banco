@@ -15,8 +15,9 @@ public class Cuenta {
         this.saldo = leer.nextInt();
     }
 
-    public void setSaldo(double saldo) {
+    public double setSaldo(double saldo) {
         this.saldo = saldo;
+        return saldo;
     }
 
     public String getTipo() {

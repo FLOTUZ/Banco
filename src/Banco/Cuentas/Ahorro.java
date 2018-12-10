@@ -8,4 +8,9 @@ public class Ahorro extends Cuenta {
         super(leer);
     }
 
+    @Override
+    public String toString() {
+        return getTipo() + getnCuenta() +
+                getNombre() + getSaldo();
+    }
 }

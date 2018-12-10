@@ -14,10 +14,11 @@ public class Main {
         File datosClientes = new File("cuentas.txt");
         Scanner leer = new Scanner(datosClientes);
 
-        while (leer.hasNext()) {
-            String tipo = leer.next();
+        while (leer.hasNext()) {    //Lleno mi base de datos
+            String tipo = leer.next();  //Obtengo primer dato de mi archivo cuentas
             if (tipo.equalsIgnoreCase("Cheques")) baseCuentas.add(new Cheques(leer));
             if (tipo.equalsIgnoreCase("Ahorro")) baseCuentas.add(new Ahorro(leer));
+
         }
     }
 }
