@@ -15,6 +15,13 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         llenadoDeBase();
+        imprimirCuentaCheques();
+    }
+
+    private static void imprimirCuentaCheques() {
+        for (int i = 0; i < baseCuentas.size(); i++) {
+            System.out.println(baseCuentas.get(i));
+        }
     }
 
     private static void llenadoDeBase() throws FileNotFoundException {
@@ -26,7 +33,6 @@ public class Main {
             if (tipo.equalsIgnoreCase("Cheques")) baseCuentas.add(new Cheques(leer));
             if (tipo.equalsIgnoreCase("Ahorro")) baseCuentas.add(new Ahorro(leer));
             if (tipo.equalsIgnoreCase("Maestra")) baseCuentas.add(new Maestra(leer));
-
         }
     }
 }

@@ -1,3 +1,4 @@
-Cheques Cheques 12  Paco    225.00  5
-Ahorro  Ahorro  23  Pedro   4970.0
-Cheques Cheques 34  Luis    12150.0 12
+Cheques Cheques 12  Paco    225.00  5   25.0
+Ahorro  Ahorro  23  Pedro   4970.0  6   30.0
+Cheques Cheques 34  Luis    12150.0 12  50.0
+Ahorro  Ahorro  23  Hugo   4970.0  3    0.0

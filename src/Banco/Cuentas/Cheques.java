@@ -10,11 +10,7 @@ public class Cheques extends Cuenta implements Operaciones{
         this.chequesEmitidos = leer.nextInt();
         this.cargos = leer.nextDouble();
     }
-    @Override
-    public String toString() {
-        return getTipo() + getnCuenta() +
-                getNombre() + getSaldo();
-    }
+
     public double emitirCheque(){
         if (chequesEmitidos < 11) cargos += 5;
         if(chequesEmitidos >= 11) cargos = 0;
@@ -23,5 +19,10 @@ public class Cheques extends Cuenta implements Operaciones{
 
     public double getCargos() {
         return cargos;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\t" + chequesEmitidos + cargos;
     }
 }

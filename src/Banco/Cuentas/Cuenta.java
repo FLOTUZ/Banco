@@ -12,7 +12,7 @@ public class Cuenta {
         this.tipo = leer.next();
         this.nCuenta = leer.nextInt();
         this.nombre = leer.next();
-        this.saldo = leer.nextInt();
+        this.saldo = leer.nextDouble();
     }
 
     public double setSaldo(double saldo) {
@@ -34,5 +34,10 @@ public class Cuenta {
 
     public double getSaldo() {
         return saldo;
+    }
+
+    @Override
+    public String toString() {
+        return tipo + "\t" + nCuenta+ "\t" + nombre + "\t"+ saldo;
     }
 }
