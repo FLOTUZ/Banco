@@ -19,8 +19,17 @@ public class Main {
     }
 
     private static void imprimirCuentaCheques() {
+        System.out.println("Cuentas de cheques");
         for (int i = 0; i < baseCuentas.size(); i++) {
-            System.out.println(baseCuentas.get(i));
+            if (baseCuentas.get(i) instanceof Cheques) System.out.println("\t" + baseCuentas.get(i));
+        }
+        System.out.println("Cuenta de ahorros");
+        for (int i = 0; i <baseCuentas.size() ; i++) {
+            if (baseCuentas.get(i) instanceof Ahorro) System.out.println("\t" + baseCuentas.get(i));
+        }
+        System.out.println("Cuentas Maestras de cheques");
+        for (int i = 0; i <baseCuentas.size(); i++) {
+            if (baseCuentas.get(i) instanceof Maestra) System.out.println("\t" + baseCuentas.get(i));
         }
     }
 
